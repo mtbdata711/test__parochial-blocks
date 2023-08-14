@@ -1,0 +1,9 @@
+<search-component collection="ual-showcase" perPage="10" page={{page}} ssr={{ssr}}>
+    <ul class="grid" data-slot="results">
+        {{> grid-item}}
+    </ul>
+    <div class="button-container">
+    <button data-slot="previous">Previous</button>
+    <button data-slot="next">Next</button>
+    </div>
+</search-component>

@@ -1,0 +1,13 @@
+{{#each items}}
+<li class="grid__item">
+    <a href="{{liveUrl}}" class="grid__link">
+        <div class="grid__image">
+            <img src="{{metaData.coverImage}}" alt="" />
+        </div>
+        <div class="grid__content">
+            <h3 class="grid__title">{{metaData.showcaseName}}</h3>
+            <p class="grid__description">{{summary}}</p>
+        </div>
+    </a>
+</li>
+{{/each}}

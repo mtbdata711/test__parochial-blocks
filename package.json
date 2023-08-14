@@ -1,0 +1,36 @@
+{
+  "name": "html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "build": "webpack build --mode=production",
+    "php:compile": "npm run build && node compile.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.22.10",
+    "@storybook/addon-essentials": "^7.2.3",
+    "@storybook/addon-interactions": "^7.2.3",
+    "@storybook/addon-links": "^7.2.3",
+    "@storybook/blocks": "^7.2.3",
+    "@storybook/html": "^7.2.3",
+    "@storybook/html-webpack5": "^7.2.3",
+    "@storybook/testing-library": "^0.2.0",
+    "css-loader": "^6.8.1",
+    "handlebars-loader": "^1.7.3",
+    "mini-css-extract-plugin": "^2.7.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.2.3",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "redefine-custom-elements": "^0.1.3"
+  }
+}

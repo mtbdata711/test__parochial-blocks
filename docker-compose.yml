@@ -1,0 +1,13 @@
+version: '3'
+services:
+  apache:
+    build: .
+    restart: 'no'
+    ports:
+      - "${APACHE_HOST_HTTP_PORT}:80"
+      - "6006:6006"
+    environment:
+      - 'XDEBUG_CONFIG=client_port=9003'
+      - 'XDEBUG_MODE=debug'
+    volumes:
+      - "${APP_CODE_PATH_HOST}:${APP_CODE_PATH_APACHE}"

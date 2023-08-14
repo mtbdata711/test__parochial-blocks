@@ -1,0 +1,51 @@
+.grid {
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.grid > li{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 0 4%;
+    margin-bottom: 4%;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    .grid > li {
+        width: 49%;
+        display: inline-flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 1008px) {
+    .grid > li {
+        width: 32%;
+        display: inline-flex;
+        flex-direction: column;
+    }
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+button{
+    display: block;
+    border-radius: 5px;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+    margin-bottom: 25px;
+}

@@ -1,0 +1,12 @@
+{
+    "name": "matthew/html",
+    "authors": [
+        {
+            "name": "Matthew Benge",
+            "email": "m.t.benge@arts.ac.uk"
+        }
+    ],
+    "require": {
+        "salesforce/handlebars-php": "^3.0"
+    }
+}
