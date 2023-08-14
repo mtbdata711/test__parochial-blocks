@@ -15,7 +15,7 @@ Including:
 Open in devcontainer and run:
 
     cd plugin && composer install
-    cd && nvm install && npm run install && npm run storybook
+    cd .. && nvm install && npm install && npm run storybook
 
 To compile assets run:
 
